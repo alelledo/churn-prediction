@@ -1,4 +1,4 @@
-# Churn Prediction Project
+# Churn in the Dutch Energy Sector
 
 # Introduction
 
@@ -8,20 +8,20 @@ This project aims to predict customer churn in an energy supply company using ma
 
 The dataset consists of 20,000 rows and 14 columns. Below are the columns:
 
-`Customer_ID:` Unique identifier for each customer.
-`Gender:` Gender of the customer (0 for male, 1 for female).
-`Age:` Age of the customer.
-`Income:` Income of the customer.
-`Relation_length:` Length of the customer's relationship with the company.
-`Contract_length:` Length of the customer's contract.
-`Start_channel:` Channel through which the customer started their contract.
-`Email_list:` Whether the customer is subscribed to the email list (0 for no, 1 for yes).
-`Home_age:` Age of the customer's home.
-`Home_label:` Label for the customer's home.
-`Electricity_usage:` Electricity usage by the customer.
-`Gas_usage:` Gas usage by the customer.
-`Province:` Province where the customer resides.
-`Churn:` Target variable indicating whether the customer churned (0 for no, 1 for yes).
+1. `Customer_ID:` Unique identifier for each customer.
+2. `Gender:` Gender of the customer (0 for male, 1 for female).
+3. `Age:` Age of the customer.
+4. `Income:` Income of the customer.
+5. `Relation_length:` Length of the customer's relationship with the company.
+6. `Contract_length:` Length of the customer's contract.
+7. `Start_channel:` Channel through which the customer started their contract.
+8. `Email_list:` Whether the customer is subscribed to the email list (0 for no, 1 for yes).
+9. `Home_age:` Age of the customer's home.
+10. `Home_label:` Label for the customer's home.
+11. `Electricity_usage:` Electricity usage by the customer.
+12. `Gas_usage:` Gas usage by the customer.
+13. `Province:` Province where the customer resides.
+14. `Churn:` Target variable indicating whether the customer churned (0 for no, 1 for yes).
 
 
 # Exploratory Data Analysis
