@@ -8,7 +8,7 @@ This project aims to predict customer churn in an energy supply company using ma
 
 The dataset consists of 20,000 rows and 14 columns. Below are the columns:
 
-Customer_ID: Unique identifier for each customer.
+`Customer_ID:` Unique identifier for each customer.
 Gender: Gender of the customer (0 for male, 1 for female).
 Age: Age of the customer.
 Income: Income of the customer.
