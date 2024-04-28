@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://cdn-icons-png.flaticon.com/512/1447/1447242.png" width = 200 alt="Logo">
 </p>
-<p align="center"><em>by Vecteezy</em></p>
+<p align="center"><em>by Flaticon</em></p>
 
 # Introduction
 
