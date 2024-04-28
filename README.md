@@ -1,5 +1,10 @@
 # Churn in the Dutch Energy Sector
 
+<p align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/1447/1447242.png" width = 200 alt="Logo">
+</p>
+<p align="center"><em>by Vecteezy</em></p>
+
 # Introduction
 
 This project aims to predict customer churn in an energy supply company using machine learning techniques. Churn prediction is essential for businesses to identify customers who are likely to leave, allowing proactive measures to retain them.
