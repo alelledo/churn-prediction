@@ -1,0 +1,30 @@
+# Librerías esenciales
+numpy
+pandas==1.5.3
+openpyxl
+
+# Visualizaciones
+matplotlib
+seaborn
+plotly-express
+
+# Modelado y computación
+scikit-learn
+scipy
+ortools
+
+# APIs y scripts
+wandb
+streamlit
+Flask
+gunicorn
+pyyaml
+fire
+
+# Miscelánea
+yfinance
+geopandas
+chart-studio
+nltk
+kaggle
+folium
