@@ -11,7 +11,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
 #---------MAIN CONTENT--------
-churn_df = pd.read_csv('https://github.com/alelledo/churn_prediction/blob/main/Dataset/churn_azure_df.csv')
+churn_df = pd.read_csv('Dataset/churn_azure_df.csv')
 
 
 
@@ -78,12 +78,12 @@ def firstlook_page():
     st.subheader('Missing and duplicated values')
     col1,col2,col3 = st.columns(3)
     with col2:
-        st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/missing_heatmap.png', width=500)
+        st.image('Img/missing_heatmap.png', width=500)
     
     st.write('No missing values or duplicates')
 
     st.subheader('Outliers')
-    st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/outliers.png')
+    st.image('Img/outliers.png')
     st.markdown('''**To notice:** Sudden jump in income, electricity usage and gas usage. After careful consideration and analysis,
                 it is discussed with the company's stakeholders that the outliers in income come from customers inputting thir yearly income
                 instead of their monthly income. Similarly, electricity and gas usage outlier's come from consumption meter misreading the levels 
@@ -95,13 +95,13 @@ def firstlook_page():
     col1, col2, col3 = st.columns(3)
     with col1:
         st.subheader('**Income**')
-        st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/income_outliers.png')
+        st.image('Img/income_outliers.png')
     with col2:
         st.subheader('**Electricity Usage**')
-        st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/electricity_outliers.png')
+        st.image('Img/electricity_outliers.png')
     with col3:
         st.subheader('**Gas Usage**')
-        st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/gas_outliers.png')
+        st.image('Img/gas_outliers.png')
         
     st.markdown('')
     st.markdown('')
@@ -117,10 +117,10 @@ Finally, the dataset is well balanced with the target variable 'Churn' being clo
     col1,col2 = st.columns(2)
     with col1:
         st.subheader('**Contract Length**')
-        st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/contract_hist.png')
+        st.image('Img/contract_hist.png')
     with col2:
         st.subheader('**Home Age**')
-        st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/home_age_hist.png')
+        st.image('Img/home_age_hist.png')
     
     st.markdown('''
                 - Contract's length histogram has a large number of ocurrences close to 0 
@@ -133,7 +133,7 @@ def statistics_page():
     
     with tab1:
         st.subheader("Correlation Plot")
-        st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/corr_plot.png')
+        st.image('Img/corr_plot.png')
     
     with tab2:
         st.header("Exploratory Data Analysis")
@@ -142,7 +142,7 @@ def statistics_page():
         st.subheader('Relationship Length and Customer Age')
         col1, col2 = st.columns(2)
         with col1:
-            st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/corr_r.length_age.png')
+            st.image('Img/corr_r.length_age.png')
         with col2:
             st.markdown('')
             st.markdown('')
@@ -169,7 +169,7 @@ def statistics_page():
         st.subheader('Age and Start Channel')
         col1, col2 = st.columns(2)
         with col1:
-            st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/box_age_startchannel.png')
+            st.image('Img/box_age_startchannel.png')
         with col2:
             st.markdown('')
             st.markdown('')
@@ -193,15 +193,15 @@ def statistics_page():
                         Aditionally a **Tukey Test** helped determine exactly which specific groups significantly differ from each other.
                         Based on the Tukey Test, the average home age for labels **A, B and C are significantly different** from each other, however, from level D onwards the age differences are not significant anymore. ''')
         with col2:
-            st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/barplot_home_agelabel.png')
+            st.image('Img/barplot_home_agelabel.png')
 
     with tab3:
         st.header("Churn - The Target Variable ")
         col1, col2 = st.columns(2)
         with col1:
-            st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/electricity_stayed_vs.png')
+            st.image('Img/electricity_stayed_vs.png')
         with col2:
-            st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/gas_stayed_vs.png')
+            st.image('Img/gas_stayed_vs.png')
         
         st.markdown('')
         st.markdown('')
@@ -213,7 +213,7 @@ def statistics_page():
         st.subheader('Contract Length and Churn')
         col1, col2 = st.columns(2)
         with col1:
-            st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/contract_churn.png')
+            st.image('Img/contract_churn.png')
         with col2:
             st.markdown('''Other variables that showed an effect on the number of customers that churned were Income, Relationship Length and 
                         Contract Length. Mann-Whitney tests show that averages between those who churned and those who did not are significantly 
@@ -239,13 +239,13 @@ def statistics_page():
                         a significant association between these variables (p-value < 0.05)''')
             
         with col2:
-            st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/churn_start_channel.png')
+            st.image('Img/churn_start_channel.png')
         
         st.markdown('')
         st.subheader('Gender and Churn')
         col1, col2 = st.columns(2)
         with col1:
-            st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/churn_gender.png')
+            st.image('Img/churn_gender.png')
         with col2:
             st.markdown('''Continuing with a Chi-square, I used it to determine any association between the gender of the customer 
                         and whether they churned or not. Interestingly, a significant association was found between these variables and 
@@ -358,7 +358,7 @@ def modelling_page():
             st.markdown('')
             st.markdown('')
             st.markdown('')
-            st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/tree_ft_importance.png')
+            st.image('Img/tree_ft_importance.png')
         
         
         
@@ -387,15 +387,15 @@ def modelling_page():
         st.markdown('')
         st.markdown('')
         st.markdown('')
-        st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/random_forest_ft.png')
+        st.image('Img/random_forest_ft.png')
     
     st.subheader('Azure - Voting Ensemble')
     st.markdown('''Azure combines the predictions of multiple individual models. ''')
     col1, col2 = st.columns(2)
     with col1: 
-        st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/azure.png')
+        st.image('Img/azure.png')
     with col2:
-        st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/votinensemble.png')
+        st.image('Img/votinensemble.png')
 #------SIDEBAR-----#
 # Define the pages and their content
 pages = ['Introduction', 'The Data - First Look','Statistics', 'Modelling']
