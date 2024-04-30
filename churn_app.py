@@ -11,7 +11,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
 #---------MAIN CONTENT--------
-churn_df = pd.read_csv('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Dataset/churn_azure_df.csv')
+churn_df = pd.read_csv('https://github.com/alelledo/churn_prediction/blob/main/Dataset/churn_azure_df.csv')
 
 
 
