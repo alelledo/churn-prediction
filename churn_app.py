@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 
 #---------MAIN CONTENT--------
-churn_df = pd.read_csv('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Dataset/churn_azure_df.csv')
+churn_df = pd.read_csv('churn_prediction/Dataset/churn_azure_df.csv')
 
 
 
