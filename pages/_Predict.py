@@ -7,7 +7,7 @@ import urllib.error
 from joblib import load
 from sklearn.ensemble import RandomForestClassifier
 
-churn_df = pd.read_csv('churn_prediction/Dataset/churn_azure_df.csv')
+churn_df = pd.read_csv('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Dataset/churn_azure_df.csv')
 RFC = load('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Model/RFC.pkl')
 
 

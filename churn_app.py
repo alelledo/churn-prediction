@@ -6,6 +6,8 @@ import ssl
 import urllib.error
 from joblib import load
 from sklearn.ensemble import RandomForestClassifier
+import os
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
 #---------MAIN CONTENT--------
@@ -336,22 +338,27 @@ def modelling_page():
     **'min_samples_leaf':** 50,
     **'ccp_alpha':** 0.003,
     **'max_depth':** 30''')
-    
-    
-    st.markdown('''
-                    - `Precision:`''')
-    st.markdown('''`·0:` 0.70''')
-    st.markdown('''`·1:` 0.75''')
-    st.markdown('''
-                    - `Recall:`''')
-    st.markdown('''`·0:` 0.79''')
-    st.markdown('''`·1:` 0.64''')
-    st.markdown('''
-                    - `F1-Score`''')
-    st.markdown('''`·0:` 0.74''')
-    st.markdown('''`·1:` 0.69''')
-    st.markdown('''
-                    - `Accuracy`: 0.72 ''')
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown('''
+                        - `Precision:`''')
+        st.markdown('''`·0:` 0.70''')
+        st.markdown('''`·1:` 0.75''')
+        st.markdown('''
+                        - `Recall:`''')
+        st.markdown('''`·0:` 0.79''')
+        st.markdown('''`·1:` 0.64''')
+        st.markdown('''
+                        - `F1-Score`''')
+        st.markdown('''`·0:` 0.74''')
+        st.markdown('''`·1:` 0.69''')
+        st.markdown('''
+                        - `Accuracy`: 0.72 ''')
+        with col2:
+            st.markdown('')
+            st.markdown('')
+            st.markdown('')
+            st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/tree_ft_importance.png')
         
         
         
@@ -359,21 +366,36 @@ def modelling_page():
     st.markdown('''Random Forest is an ensemble method of Decision Trees, offering some etra perks, such as, reduced overfitting, 
                 robustness and an overall improved performance. ''')
     
+    col1, col2 = st.columns(2)
     
-    st.markdown('''
-                    - `Precision:`''')
-    st.markdown('''`·0:` 0.74''')
-    st.markdown('''`·1:` 0.76''')
-    st.markdown('''
-                    - `Recall:`''')
-    st.markdown('''`·0:` 0.78''')
-    st.markdown('''`·1:` 0.71''')
-    st.markdown('''
-                    - `F1-Score`''')
-    st.markdown('''`·0:` 0.76''')
-    st.markdown('''`·1:` 0.73''')
-    st.markdown('''
-                    - `Accuracy`: 0.75 ''')
+    with col1:
+        st.markdown('''
+                        - `Precision:`''')
+        st.markdown('''`·0:` 0.74''')
+        st.markdown('''`·1:` 0.76''')
+        st.markdown('''
+                        - `Recall:`''')
+        st.markdown('''`·0:` 0.78''')
+        st.markdown('''`·1:` 0.71''')
+        st.markdown('''
+                        - `F1-Score`''')
+        st.markdown('''`·0:` 0.76''')
+        st.markdown('''`·1:` 0.73''')
+        st.markdown('''
+                        - `Accuracy`: 0.75 ''')
+    with col2:
+        st.markdown('')
+        st.markdown('')
+        st.markdown('')
+        st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/random_forest_ft.png')
+    
+    st.subheader('Azure - Voting Ensemble')
+    st.markdown('''Azure combines the predictions of multiple individual models. ''')
+    col1, col2 = st.columns(2)
+    with col1: 
+        st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/azure.png')
+    with col2:
+        st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/votinensemble.png')
 #------SIDEBAR-----#
 # Define the pages and their content
 pages = ['Introduction', 'The Data - First Look','Statistics', 'Modelling']
