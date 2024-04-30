@@ -87,7 +87,7 @@ def firstlook_page():
     st.markdown('''**To notice:** Sudden jump in income, electricity usage and gas usage. After careful consideration and analysis,
                 it is discussed with the company's stakeholders that the outliers in income come from customers inputting thir yearly income
                 instead of their monthly income. Similarly, electricity and gas usage outlier's come from consumption meter misreading the levels 
-                of consumption and adding an extra 0. This outliers are dealt with for following analysis''')
+                of consumption and adding an extra 0. This outliers are dealt with for posterior analysis.''')
     
     st.markdown('')
     st.markdown('')
