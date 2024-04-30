@@ -163,7 +163,7 @@ def statistics_page():
             st.markdown('''Electricity usage and Gas usage follow the same path as our previous variables. They do not follow a normal distribution 
                         and opposite to face validity, seem to be positively correlated.''')
         with col2:
-            st.image('/Users/alejandrovillanuevalledo/Documents/GitHub/churn_prediction/Img/corr_gas_electricity.png')
+            st.image('Img/corr_gas_electricity.png')
         
         st.markdown('')
         st.subheader('Age and Start Channel')
