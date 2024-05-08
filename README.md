@@ -28,7 +28,20 @@ The dataset consists of 20,000 rows and 14 columns. Below are the columns:
 13. `Province:` Province where the customer resides.
 14. `Churn:` Target variable indicating whether the customer churned (0 for no, 1 for yes).
 
+## Usage
 
+### Running the Jupyter Notebook
+1. Ensure you have installed all dependencies.
+2. Run the Jupyter Notebook `energy_supplier.ipynb` to execute the analysis.
+3. View the Streamlit app for visualizations, insights and predictions based on your own input. You can use the following link https://energy-churn.streamlit.app/
+
+### Running the Streamlit App
+
+1. Ensure you have installed all dependencies and all required files and folders are downloaded and inside the same directory.
+2. Navigate to the project directory
+3. Run the Streamlit app: `streamlit run churn_app.py`
+
+   
 # Exploratory Data Analysis
 
 - No null values are present in the dataset.
