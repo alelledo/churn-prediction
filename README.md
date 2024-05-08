@@ -28,6 +28,15 @@ The dataset consists of 20,000 rows and 14 columns. Below are the columns:
 13. `Province:` Province where the customer resides.
 14. `Churn:` Target variable indicating whether the customer churned (0 for no, 1 for yes).
 
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository
+2. Navigate to the project directory
+3. Install dependencies: `pip install -r requirements.txt`
+
+   
 ## Usage
 
 ### Running the Jupyter Notebook
