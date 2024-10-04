@@ -404,7 +404,7 @@ pages = ['Introduction', 'The Data - First Look','Statistics', 'Modelling']
 st.sidebar.title('Explore')
 
 # Render buttons for each page in the sidebar using a for loop
-selected_page = None
+selected_page = 'Introduction'
 for index, page in enumerate(pages):
     if st.sidebar.button(page, key=f"{page}_{index}"):
         selected_page = page
